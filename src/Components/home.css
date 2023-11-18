@@ -1,0 +1,49 @@
+
+.posterimage img{
+    height: 600px;
+}
+
+.posterimage{
+    opacity: 0.95;
+    position: relative;
+}
+.movies_details{
+    color: white;
+    position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    text-align: initial;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.Movie_title{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 300px){
+    .posterimage img{
+        height: auto;
+    }
+    .Movie_title{
+        font-weight: 100;
+    }
+    .movies_details{
+        font-weight: 300;
+        color: white;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        text-align: left;
+        padding: 10px;
+    }
+    
+    .Movie_overview{
+        display: none;
+    }
+
+}
